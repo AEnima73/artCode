@@ -1,0 +1,124 @@
+body{
+    background-color: #ffffb3;
+    margin: 0px;
+    padding: 0px;
+}
+
+.perro{
+    background-color: #fdb44e;
+    width: 120px;
+    height: 75px;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    border-radius: 0px 0px 0px 120px;  
+}
+.cuerpo{
+    background-color: #fdb44e;
+    height: 100px;
+    width: 180px;
+    position: relative;
+    top: 55px;
+    left: 70px;
+    border-radius: 0px 0px 0px 60px;
+}
+.pata1, .pata2, .pata3, .pata4{
+    background-color: #fdb44e;
+    height: 50px;
+    width: 18px;
+    position: relative;
+}
+.pata1{
+    left: 100px;
+    top: 48px;
+}
+.pata2{
+    left: 130px;
+    bottom: 2px;
+}
+.pata3{
+    left: 203px;
+    bottom: 50px;
+    background-color: rgba(216, 155, 69, 0.7);
+    z-index: -1;
+}
+.pata4{
+    left: 232px;
+    bottom: 100px;
+}
+.cola{
+    width: 0px;
+    height: 0px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 100px solid #fdb44e;
+    position: relative;
+    bottom: 320px;
+    left: 230px;
+    transform: rotate(30deg);
+    transform-origin: bottom;
+    animation: wag 1s infinite;
+}
+@keyframes wag{
+    50%{
+        transform: rotate(10deg);
+    }
+}
+.oreja{
+    background-color: rgba(151, 89, 2, 0.8);
+    width: 45px;
+    height: 90px;
+    border-radius: 0px 0px 100px 100px;
+    position: relative;
+    left: 75px;
+    bottom: 400px;
+}
+.nariz{
+    background-color: black;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    position: relative;
+    right: 3px;
+    bottom: 492px;
+}
+.ojo{
+    background-color: black;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    position: relative;
+    left: 50px;
+    bottom: 490px;
+}
+.lengua{
+    background-color: tomato;
+    height: 18px;
+    width: 9px;
+    border-radius: 40%;
+    position: relative;
+    bottom: 469px;
+    left: 22px;
+    z-index: -1;
+    transform: rotate(45deg);
+    animation: move 1s infinite;
+}
+@keyframes move{
+    50%{
+        transform: rotate(45deg) translateY(3.5px);
+    }
+}
+img{
+    width: 80px;
+    height: 45px;
+    position: relative;
+    bottom: 400px;
+    right: 120px;
+
+}
+h1{
+    text-align: center;
+    color: gold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 46px;
+}
